@@ -3,11 +3,15 @@
 fork. I didn't like the default themes, and how mehrmaid (unintentionally?) changes it globally, so here's my attempt to fix it
 
 ## how?
-*how?* uhh, I just added default .mermaid class to the merhmaid code block. Maybe (and I'm pretty sure) **there are consequences**. I guess it shouldn't rm -rf your vault, but be advised that **there was not any testing**; at worst, maybe styles may go wrong. WIP
+*how?* uhh, I just added default .mermaid class to the merhmaid code block. Maybe (and I'm pretty sure) **there are consequences** as it's just a quick fix. I guess it shouldn't rm -rf your vault, but be advised that **there wasn't done any testing**.
+
+99% everything will be fine, and only graphical issues are possilble at worst, but i'm not expert in plugins
+
+WIP
 
 # Installation
 
-WIP
+WIP. BRAT?
 
 ## Contributing
 
