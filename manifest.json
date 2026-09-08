@@ -1,10 +1,10 @@
 {
-	"id": "mehrmaid",
-	"name": "Mehrmaid",
-	"version": "0.0.2",
+	"id": "mehrmaid-T",
+	"name": "Mehrmaid-T",
+	"version": "0.0.2.1",
 	"minAppVersion": "0.15.0",
 	"description": "Enables you to put Markdown inside of Mermaid diagrams.",
-	"author": "huterguier",
-	"authorUrl": "https://github.com/huterguier",
+	"author": "delelelelelele",
+	"authorUrl": "https://github.com/delelelelelele",
 	"isDesktopOnly": false
 }
