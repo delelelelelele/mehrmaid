@@ -1,5 +1,5 @@
 import { App, MarkdownRenderChild, MarkdownRenderer, MarkdownPostProcessorContext, loadMermaid } from 'obsidian';
-import { THEME_DARK, THEME_LIGHT } from './themes';
+//import { THEME_DARK, THEME_LIGHT } from './themes';
 
 
 async function renderMarkdown(str: string, el: HTMLElement, ctx: MarkdownPostProcessorContext, app: App) {
@@ -17,20 +17,9 @@ async function renderMarkdown(str: string, el: HTMLElement, ctx: MarkdownPostPro
 export async function renderMehrmaid(source: string, el: HTMLElement, ctx: MarkdownPostProcessorContext) {
     
     const mermaid = await loadMermaid();
-
-    let config = {}
-    if (document.body.classList.contains("theme-dark")) {
-        config = THEME_DARK;
-        source += "\n" + "classDef primary fill:#8a5cf5";
-    }
-    else {
-        config = THEME_LIGHT;
-        source += "\n" + "classDef primary fill:#a68afa";
-    }
-
-
-    mermaid.initialize(config);
-    mermaid.mermaidAPI.setConfig(config);
+    el.addClass('mermaid')
+    //mermaid.initialize(config);
+    //mermaid.mermaidAPI.setConfig(config);
     let matches = source.match(/"([^"]*?)"/g);
 
     if (matches) {
